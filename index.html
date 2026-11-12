@@ -25,8 +25,18 @@
     header {
       background: linear-gradient(135deg, var(--primary) 0%, #19547b 100%);
       color: #ffffff;
-      padding: 60px 20px;
+      padding: 50px 20px;
       text-align: center;
+    }
+    .author-photo {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      object-position: top center;
+      border-radius: 50%;
+      border: 4px solid #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+      margin-bottom: 16px;
     }
     header h1 {
       font-size: 2.4rem;
@@ -152,6 +162,7 @@
 <body>
 
 <header>
+  <img src="lawson.jpg" alt="Lawson Chiwara — Author and Educator" class="author-photo">
   <h1>Lawson Chiwara</h1>
   <p class="tagline">Zimbabwean O-Level English Educator, Remedial Workbook Author &amp; Freelance Community Journalist</p>
   <nav>
@@ -165,7 +176,6 @@
 
 <main>
 
-  <!-- ABOUT SECTION -->
   <section id="about">
     <h2>About Lawson Chiwara</h2>
     <div class="card">
@@ -174,7 +184,6 @@
     </div>
   </section>
 
-  <!-- FEATURED BOOK SECTION -->
   <section id="book">
     <h2>Featured Publication</h2>
     <div class="card featured-book">
@@ -192,7 +201,6 @@
     </div>
   </section>
 
-  <!-- JOURNALISM ARCHIVE (EXCLUSIVE TO GITHUB PAGES SINCE WHATSAPP CHANNELS ARE UNINDEXED) -->
   <section id="journalism">
     <h2>Community Journalism Archive (Lowveld Checkpoint)</h2>
     <p style="margin-bottom: 15px; color: var(--muted);">Selected community reporting originally broadcast via the <em>Lowveld Checkpoint</em> WhatsApp Channel, archived here for public access and press reference.</p>
@@ -212,19 +220,8 @@
       <p><strong>DANDA VILLAGE</strong> — Mahwenje Mining plans to invest about US$2 million in a new quarry project in Danda Village, Zaka North. The development aims to create local jobs and support infrastructure improvements in nearby communities.</p>
       <p style="margin-top: 8px;">The project, which has received approval from the Environmental Management Agency (EMA), Zaka Rural District Council, traditional leaders, and residents after consultations, is now in the site-mapping stage.</p>
     </article>
-
-    <!-- TEMPLATE FOR RECOVERED STORIES: Copy and paste this <article> block whenever you recover an older group piece -->
-    <!--
-    <article class="card">
-      <span class="badge">Zaka &bull; Community News</span>
-      <h3>[Insert Headline Here]</h3>
-      <p class="meta">By Lawson Chiwara &bull; Lowveld Checkpoint (Recovered Archive)</p>
-      <p>[Paste story text here]</p>
-    </article>
-    -->
   </section>
 
-  <!-- CREATIVE WRITING & BLOG LINKS (NO DUPLICATE TEXT — CURATED SUMMARIES LINKING TO BLOGGER) -->
   <section id="writing">
     <h2>Fiction, Screenplays &amp; Teaching Notes (Threads of Fire)</h2>
     <p style="margin-bottom: 15px; color: var(--muted);">Full texts are published on the official <em>Threads of Fire</em> blog.</p>
@@ -234,5 +231,8 @@
         <h3>Guided Composition Made Simple</h3>
         <p class="meta">Education &amp; ZIMSEC Pedagogy &bull; April 2025</p>
         <p>How low Teacher Talking Time, chalkboard sketches, Shona bridges, and 6-format starter templates lifted rural Form 4 English pass rates by 15%.</p>
+        <a href="https://blogspot.com" target="_blank" rel="noopener" class="btn btn-outline">Read on Threads of Fire &rarr;</a>
+      </div>
 
-        
+      <div class="card">
+        <h3>When the Gate Closes: The Lodger's Last Morning</h3>
