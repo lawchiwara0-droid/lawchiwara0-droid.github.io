@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lawchiwara0-droid.github.io/sitemap.xml
