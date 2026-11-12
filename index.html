@@ -16,6 +16,9 @@
       --border: #d9e2ec;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    section:target h2 { color: var(--accent); border-bottom-color: var(--accent); }
+    section:target .card { border-color: var(--accent); background-color: #fffdf5; }
     body {
       font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
       background-color: var(--bg);
@@ -95,6 +98,7 @@
     }
     section {
       margin-bottom: 45px;
+      scroll-margin-top: 20px;
     }
     h2 {
       font-size: 1.55rem;
@@ -102,6 +106,7 @@
       border-bottom: 2px solid var(--border);
       padding-bottom: 8px;
       margin-bottom: 20px;
+      transition: color 0.3s, border-color 0.3s;
     }
     .card {
       background: var(--card);
@@ -110,6 +115,7 @@
       padding: 24px;
       margin-bottom: 20px;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+      transition: border-color 0.3s, background-color 0.3s;
     }
     .featured-book {
       border-left: 5px solid var(--accent);
@@ -183,14 +189,14 @@
 <body>
 
 <header>
-  <img src="lawson.jpg.jpg" alt="Lawson Chiwara — Author and Educator" class="author-photo">
+  <img src="lawson.jpg" alt="Lawson Chiwara — Author and Educator" class="author-photo">
   <h1>Lawson Chiwara</h1>
   <p class="tagline">Zimbabwean O-Level English Educator (11+ Years Experience), Remedial Workbook Author &amp; Freelance Community Journalist</p>
 
   <div class="social-bar">
-    <a href="https://www.facebook.com/share/1Dy8Zq5e8C/" target="_blank" rel="noopener" class="social-pill">Facebook</a>
-    <a href="https://x.com/lawchiwara0" target="_blank" rel="noopener" class="social-pill">X (@lawchiwara0)</a>
-    <a href="https://www.tiktok.com/@lawsonchiwarawrites" target="_blank" rel="noopener" class="social-pill">TikTok (@lawsonchiwarawrites)</a>
+    <a href="https://facebook.com" target="_blank" rel="noopener" class="social-pill">Facebook</a>
+    <a href="https://x.com" target="_blank" rel="noopener" class="social-pill">X (@lawchiwara0)</a>
+    <a href="https://tiktok.com" target="_blank" rel="noopener" class="social-pill">TikTok (@lawsonchiwarawrites)</a>
     <a href="https://blogspot.com" target="_blank" rel="noopener" class="social-pill">Threads of Fire Blog</a>
   </div>
 
@@ -246,9 +252,3 @@
       <span class="badge">Zaka North &bull; Local Governance &amp; Education</span>
       <h3>Vacate Schools Boundaries — Chief Ndanga Gives Ultimatum to Residents</h3>
       <p class="meta">By Lawson Chiwara &bull; Lowveld Checkpoint</p>
-      <p><strong>ZAKA NORTH</strong> — Chief Ndanga issued a firm warning to villagers occupying land within areas reserved for schools and other public institutions, moving to enforce a 24-metre institutional boundary buffer around Danda Primary and Secondary Schools in line with local development plans.</p>
-    </article>
-
-    <article class="card">
-      <span class="badge">Zaka North &bull; Rural Development &amp; Employment</span>
-      <h3>Danda Quarry Project Creates Jobs and Development in Zaka</h3>
